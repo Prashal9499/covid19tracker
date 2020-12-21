@@ -101,7 +101,7 @@ Covid-19 Tracker
 <br>
 
 <p class=" text-justify text-center ques">Who are you?</p>
-<p class=" text-justify text-center ans"> I am Prashal Tarkas (creator of this website) a student who likes to work on different projects.</p>
+<p class=" text-justify text-center ans"> I am <a href="https://prashal9499.github.io/" target="_blank">Prashal Tarkas</a> (creator of this website) a student who likes to work on different projects.</p>
 
 </div>
 
