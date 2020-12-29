@@ -1,95 +1,107 @@
-<!DOCTYPE html> <!-- ----------------- html starts ----------------- -->
-  <html>
-    <head> <!-- ----------------- head section ----------------- -->
-      <title>APIs Used</title>
-        <?php include 'links/links.php'; ?>
-          <?php include 'css/styles.php'; ?>
-      </head>
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <meta name="description" content="APIs that are used to built this project">
+  <title>APIs Used</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+<body>
 
-        <body> <!-- ----------------- body section ----------------- -->
+  <!-- top nav -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3"> 
+    <a class="navbar-brand" href="index.php">
+      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">Covid-19 Tracker
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+      </ul>
+    </div>
+  </nav>
+           
+  <!-- heading -->
+  <section class="corona_update container-fluid">
+  <div class="mb-3 ">
+    <h1 class="text-center h1 margin"> APIs USED </h1>
+  </div> 
+                  
+  <!-- table -->                  
+  <div class="main-div">
+    <div class="center-div">
+      <div style="background-color: #121212" class="table-responsive card">
+        <table class="table table-dark table-borderless text-left table-hover" style="background-color: #1F1B24" id="tbvalb">
+          <thead>
+            <tr>
+              <th scope="col" style="color: #C0392B">S No.</th> 
+              <th scope="col" style="color: #2ECC71">Data APIs</th>
+              <th scope="col" style="color: #3498DB">URL</th>
+              <th scope="col" style="color: #F1C40F">Status</th>
+            </tr> 
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>World</td>
+              <td><a href="https://api.covid19api.com/summary" target="_blank">https://api.covid19api.com/summary</a></td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>India</td>
+              <td><a href="https://api.covid19india.org/data.json" target="_blank">https://api.covid19india.org/data.json</a></td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>India Day-Wise</td>
+              <td><a href="https://api.covid19india.org/data.json" target="_blank">https://api.covid19india.org/data.json</a></td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>India States Day-Wise</td>
+              <td><a href="https://api.covid19india.org/states_daily.json" target="_blank">https://api.covid19india.org/states_daily.json</a></td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>India Testing</td>
+              <td><a href="https://api.covid19india.org/state_test_data.json" target="_blank">https://api.covid19india.org/state_test_data.json</a></td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>India District-Wise Population</td>
+              <td><a href="https://api.covid19india.org/misc.json" target="_blank">https://api.covid19india.org/misc.json</a></td>
+              <td>Active</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>                        
+    </div>
+  </div> 
 
-          <nav class="navbar navbar-expand-lg navbar navbar-dark p-3"> <!-- -----------------nop navbar ----------------- -->
-            <a class="navbar-brand" href="index.php">
-              <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">
-                Covid-19 Tracker
-            </a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    </ul>
-                </div>
-          </nav>
-           <br> <!-- ----------------- line break ----------------- -->
-            <br> <!-- ----------------- line break ----------------- -->
-
-              <section class="corona_update container-fluid">
-                <div class="mb-3 ">
-                  <h1 class="text-center h1"> APIs USED </h1> <!-- -----------------head line----------------- -->
-                </div> 
-                  <br> <!-- ----------------- line break ----------------- -->
-                    <br> <!-- ----------------- line break ----------------- -->
-                      <div class="main-div">
-                        <div class="center-div">
-                          <div style="background-color: #121212" class="table-responsive card"> <!-- ----------------- data table ----------------- -->
-                            <table class="table table-dark table-borderless text-left table-hover" style="background-color: #1F1B24" id="tbvalb">
-                              <thead>
-                                <tr>
-                                  <th scope="col" style="color: #BB86FC">S No.</th> <!-- ----------------- table head ----------------- -->
-                                    <th scope="col" style="color: #BB86FC">Data APIs</th>
-                                      <th scope="col" style="color: #BB86FC">URL</th>
-                                        <th scope="col" style="color: #BB86FC">Status</th>
-                                </tr> 
-                              </thead>
-                                <tbody>
-                                  <tr> <!-- ----------------- table contents ----------------- -->
-                                    <th scope="row">1</th>
-                                      <td>World</td>
-                                        <td><a href="https://api.covid19api.com/summary" target="_blank">https://api.covid19api.com/summary</a></td>
-                                          <td>Active</td>
-                                  </tr>
-                                    <tr>
-                                      <th scope="row">2</th>
-                                        <td>India</td>
-                                          <td><a href="https://api.covid19india.org/data.json" target="_blank">https://api.covid19india.org/data.json</a></td>
-                                            <td>Active</td>
-                                    </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                          <td>India Day-Wise</td>
-                                            <td><a href="https://api.covid19india.org/data.json" target="_blank">https://api.covid19india.org/data.json</a></td>
-                                              <td>Active</td>
-                                      </tr>
-                                        <tr>
-                                          <th scope="row">4</th>
-                                            <td>India States Day-Wise</td>
-                                              <td><a href="https://api.covid19india.org/states_daily.json" target="_blank">https://api.covid19india.org/states_daily.json</a></td>
-                                                <td>Active</td>
-                                        </tr>
-                                          <tr>
-                                            <th scope="row">5</th>
-                                              <td>India Testing</td>
-                                                <td><a href="https://api.covid19india.org/state_test_data.json" target="_blank">https://api.covid19india.org/state_test_data.json</a></td>
-                                                  <td>Active</td>
-                                          </tr>
-                                            <tr>
-                                              <th scope="row">6</th>
-                                                <td>India District-Wise Population</td>
-                                                  <td><a href="https://api.covid19india.org/misc.json" target="_blank">https://api.covid19india.org/misc.json</a></td>
-                                                    <td>Active</td>
-                                            </tr>
-                               </tbody>
-
-                            </table>
-                              <br> <!-- ----------------- line break ----------------- -->
-                                <br> <!-- ----------------- line break ----------------- -->
-
-                                  <footer class="mt-5 footer"> <!-- ----------------- footer ----------------- -->
-                                    <div class="footer_style text-center container-fluid">
-                                      <p>© Covid-19 Tracker</p>
-                                    </div>
-                                  </footer>
-                                  
-        </body>
-  </html>
+  <!-- footer -->                             
+  <footer class="mt-5 footer">
+    <div class="footer_style text-center container-fluid">
+      <p>© Covid-19 Tracker</p>
+    </div>
+  </footer>
+  
+  <!-- javascript -->       
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</body>
+</html>

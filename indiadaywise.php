@@ -1,143 +1,133 @@
-<!DOCTYPE html> <!-- ----------------- html starts ----------------- -->
-  <html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <meta name="description" content="Covid-19 cases from inida on per day basis">
+  <title>India Day-Wise Updates</title>
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
+</head>
+<body onload="fetch()"> 
 
-    <head><!-- ----------------- head section ----------------- -->
-      <title>India Day-Wise Updates</title>
-        <?php include 'links/links.php'; ?>
-          <?php include 'css/styles.php'; ?>
-    </head>
-
-      <body onload="fetch()"> <!-- ----------------- body section ----------------- -->
-
-        <nav class="navbar navbar-expand-lg navbar navbar-dark p-3"> <!-- ----------------- top nav bar ----------------- -->
-          <a class="navbar-brand" href="index.php">
-            <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">
-              Covid-19 Tracker
+  <!-- top music -->
+  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3"> 
+    <a class="navbar-brand" href="index.php">
+      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">Covid-19 Tracker
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="report.php">Report</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">World</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          India
           </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="report.php">Report</a>
-                  </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.php">World</a>
-                    </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          India
-                        </a>
-                          <div class="dropdown-menu dropstyle" aria-labelledby="navbarDropdown">
-                            <a  class="dropdown-item dropstyle" href="india.php">Live Updates</a>
-                              <a  class="dropdown-item dropstyle" href="statesdaywise.php">States Day-Wise Updates</a>
-                                <a  class="dropdown-item dropstyle" href="testing.php">Testing</a>
-                                  <a  class="dropdown-item dropstyle" href="population.php">District-Wise Population</a>
-                      </li>   
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Covid-19
-                          </a>
-                            <div class="dropdown-menu dropstyle" aria-labelledby="navbarDropdown">
-                              <a  class="dropdown-item dropstyle" href="covid19.php">About Covid-19</a>
-                                <a  class="dropdown-item dropstyle" href="symptoms.php">Symptoms</a>
-                                  <a  class="dropdown-item dropstyle" href="prevention.php">Prevention</a>
-                        </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="info.php">Info</a>
-                          </li>
-                </ul>
-              </div>
-      </nav>
-        <br> <!-- ----------------- line break ----------------- -->
-          <br> <!-- ----------------- line break ----------------- -->
+          <div class="dropdown-menu dropstyle" aria-labelledby="navbarDropdown">
+            <a  class="dropdown-item dropstyle" href="india.php">Live Updates</a>
+            <a  class="dropdown-item dropstyle" href="statesdaywise.php">States Day-Wise Updates</a>
+            <a  class="dropdown-item dropstyle" href="testing.php">Testing</a>
+            <a  class="dropdown-item dropstyle" href="population.php">District-Wise Population</a>
+          </div>
+        </li>   
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Covid-19
+          </a>
+          <div class="dropdown-menu dropstyle" aria-labelledby="navbarDropdown">
+            <a  class="dropdown-item dropstyle" href="covid19.php">About Covid-19</a>
+            <a  class="dropdown-item dropstyle" href="symptoms.php">Symptoms</a>
+            <a  class="dropdown-item dropstyle" href="prevention.php">Prevention</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.php">Info</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-            <section class="corona_update container-fluid"> <!-- ----------------- headline ----------------- -->
-              <div class="mb-3 ">
-                <h1 class="text-center text-uppercase h1"> covid-19 india day-wise updates</h1>
-              </div>
-                <br> <!-- ----------------- line break ----------------- -->
-                  <br> <!-- ----------------- line break ----------------- -->
+  <!-- heading -->
+  <section class="corona_update container-fluid">
+    <div class="mb-3 ">
+      <h1 class="text-center text-uppercase h1 margin"> covid-19 india day-wise updates</h1>
+    </div>
 
-                    <div style="background-color: #121212" class="table-responsive card"> <!-- ----------------- main table ----------------- -->
-                      <table class=" table table-dark table-borderless text-left table-hover" style="background-color: #121212;" id="tbl">
+    <!-- table -->
+    <div style="background-color: #121212" class="table-responsive card">
+      <table class=" table table-dark table-borderless text-left table-hover" style="background-color: #121212;" id="tbl">
 
-<?php // ----------------- php code for fetching API (India Day-Wise) ----------------- 
+      <!-- php code for fetching API (India Day-Wise) -->
+      <?php
+        $data = file_get_contents('https://api.covid19india.org/data.json');
+        $daywise = json_decode($data, true);
+        $totalcount = count($daywise['cases_time_series']);
+        $i=0;
+        while ($i <  $totalcount){ 
+      ?>
 
-$data = file_get_contents('https://api.covid19india.org/data.json');
-$daywise = json_decode($data, true);
-
-$totalcount = count($daywise['cases_time_series']);
-
-$i=0;
-while ($i <  $totalcount){
-    
-?>
-
-  <tr> <!-- ----------------- data table ----------------- -->
-     <th class="text-left" colspan="6" style="color: #BB86FC; background-color: #1F1B24">Date and Month</th>
-  </tr>
-    <tr>
-      <td colspan="6" class="text-left" ><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
-    </tr>
-      <tr class="text-capitalize" style="background-color: #1F1B24"> <!-- ----------------- table head ----------------- -->
-        <th style="color: #BB86FC">daily confirmed</th>
-          <th style="color: #BB86FC">daily deceased</th>
-            <th style="color: #BB86FC">daily recovered</th>
-              <th style="color: #BB86FC">total confirmed</th>
-                <th style="color: #BB86FC">total deceased</th>
-                  <th style="color: #BB86FC">total recovered</th>
+      <tr> 
+        <th class="text-left" colspan="6" style="color: #3498DB; background-color: #1F1B24">Date and Month</th>
       </tr>
-        <tr class="mb-5">
-          <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> <!-- -----------------table row ----------------- -->
-            <td><?php echo $daywise['cases_time_series'][$i] ['dailydeceased'] . "<br>" ; ?></td>
-              <td><?php echo $daywise['cases_time_series'][$i] ['dailyrecovered'] . "<br>" ; ?></td>
-                <td><?php echo $daywise['cases_time_series'][$i] ['totalconfirmed'] . "<br>" ; ?></td>
-                  <td><?php echo $daywise['cases_time_series'][$i] ['totaldeceased'] . "<br>" ; ?></td>
-                    <td><?php echo $daywise['cases_time_series'][$i] ['totalrecovered'] . "<br>" ; ?></td>
-         </tr>
+      <tr>
+        <td colspan="6" class="text-left" ><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
+      </tr>
+      <tr class="text-capitalize" style="background-color: #1F1B24">
+        <th style="color: #E74C3C">daily confirmed</th>
+        <th style="color: #95A5A6">daily deceased</th>
+        <th style="color: #2ECC71">daily recovered</th>
+        <th style="color: #E74C3C">total confirmed</th>
+        <th style="color: #95A5A6">total deceased</th>
+        <th style="color: #2ECC71">total recovered</th>
+      </tr>
+      <tr class="mb-5">
+        <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> 
+        <td><?php echo $daywise['cases_time_series'][$i] ['dailydeceased'] . "<br>" ; ?></td>
+        <td><?php echo $daywise['cases_time_series'][$i] ['dailyrecovered'] . "<br>" ; ?></td>
+        <td><?php echo $daywise['cases_time_series'][$i] ['totalconfirmed'] . "<br>" ; ?></td>
+        <td><?php echo $daywise['cases_time_series'][$i] ['totaldeceased'] . "<br>" ; ?></td>
+        <td><?php echo $daywise['cases_time_series'][$i] ['totalrecovered'] . "<br>" ; ?></td>
+      </tr>
 
-<?php // ----------------- php for increment in table data ----------------- 
+      <?php
+        $i++;
+        }
+      ?>
 
-$i++;
-}
-
-?>
-
-    </table>
-  </div>
-</section>
-
-  <div class="container scrolltop float-right pr-5"> <!-- ----------------- top scroller ----------------- -->
+      </table>
+    </div>
+  </section>
+  
+  <!-- top scroller -->
+  <div class="container scrolltop float-right pr-5">
     <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"> </i>
   </div>
+  
+  <!-- footer -->
+  <footer class="mt-5 footer"> 
+    <div class="footer_style text-center container-fluid">
+      <p>© Covid-19 Tracker</p>
+    </div>
+  </footer>
 
-    <footer class="mt-5 footer"> <!-- ----------------- footer ----------------- -->
-      <div class="footer_style text-center container-fluid">
-        <p>© Covid-19 Tracker</p>
-      </div>
-    </footer>
-
-<script type="text/javascript"> // ----------------- javascript for top scroller -----------------
-mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-mybutton.style.display = "block";
-} else {
-mybutton.style.display = "none";
-}
-}
-
-function topFunction(){
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
-
-</script>
-
-      </body>
-
-  </html>
+  <!-- javascript -->       
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="assets/javascript/topscroller.js"></script>
+  
+</body>
+</html>
