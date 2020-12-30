@@ -4,22 +4,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="Covid-19 cases from inida on per day basis">
   <title>India Day-Wise Updates</title>
+  <!-- icon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
 </head>
-<body onload="fetch()"> 
+<body> 
 
-  <!-- top music -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3"> 
-    <a class="navbar-brand" href="index.php">
-      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">Covid-19 Tracker
+  <!-- top nav -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
+    <a class="navbar-brand" style="color: #007BFF;" href="index.php">
+    Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -61,14 +63,14 @@
   </nav>
 
   <!-- heading -->
-  <section class="corona_update container-fluid">
+  <section class="container-fluid">
     <div class="mb-3 ">
-      <h1 class="text-center text-uppercase h1 margin"> covid-19 india day-wise updates</h1>
+      <h1 class="text-center text-uppercase margin main-text"> covid-19 india day-wise updates</h1>
     </div>
 
     <!-- table -->
-    <div style="background-color: #121212" class="table-responsive card">
-      <table class=" table table-dark table-borderless text-left table-hover" style="background-color: #121212;" id="tbl">
+    <div class="table-responsive">
+      <table class=" table table-sm table-light text-left table-hover table-striped table-bordered" id="tbl">
 
       <!-- php code for fetching API (India Day-Wise) -->
       <?php
@@ -80,18 +82,18 @@
       ?>
 
       <tr> 
-        <th class="text-left" colspan="6" style="color: #3498DB; background-color: #1F1B24">Date and Month</th>
+        <th class="text-left" colspan="6" style="color: #FFFFFF; background-color: #3498DB">Date and Month</th>
       </tr>
       <tr>
         <td colspan="6" class="text-left" ><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
       </tr>
-      <tr class="text-capitalize" style="background-color: #1F1B24">
-        <th style="color: #E74C3C">daily confirmed</th>
-        <th style="color: #95A5A6">daily deceased</th>
-        <th style="color: #2ECC71">daily recovered</th>
-        <th style="color: #E74C3C">total confirmed</th>
-        <th style="color: #95A5A6">total deceased</th>
-        <th style="color: #2ECC71">total recovered</th>
+      <tr class="text-capitalize">
+        <th style="color: #FFFFFF; background-color: #E74C3C;">daily confirmed</th>
+        <th style="color: #FFFFFF; background-color: #95A5A6;">daily deceased</th>
+        <th style="color: #FFFFFF; background-color: #2ECC71;">daily recovered</th>
+        <th style="color: #FFFFFF; background-color: #E74C3C;">total confirmed</th>
+        <th style="color: #FFFFFF; background-color: #95A5A6;">total deceased</th>
+        <th style="color: #FFFFFF; background-color: #2ECC71;">total recovered</th>
       </tr>
       <tr class="mb-5">
         <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> 
@@ -117,8 +119,8 @@
   </div>
   
   <!-- footer -->
-  <footer class="mt-5 footer"> 
-    <div class="footer_style text-center container-fluid">
+  <footer> 
+    <div class="footer_style text-center container-fluid main-text">
       <p>© Covid-19 Tracker</p>
     </div>
   </footer>

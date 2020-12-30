@@ -2,7 +2,6 @@
 function fetch(){
   $.get("https://api.covid19api.com/summary", 
     function (data){
-    // console.log(data['Countries'].length);
     var tbvalb = document.getElementById('tbvalb')
       for(var i=1; i<(data['Countries'].length); i++){
     var x = tbvalb.insertRow();

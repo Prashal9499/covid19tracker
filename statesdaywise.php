@@ -4,22 +4,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="Covid-19 cases from indian states on per day basis">
   <title>Indian States Day-Wise Updates</title>
+  <!-- icon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
 </head>
-<body onload="fetch()"> 
+<body> 
 
-  <!-- lintop navks -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3"> 
-    <a class="navbar-brand" href="index.php">
-      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker"> Covid-19 Tracker
+  <!-- top nav -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
+    <a class="navbar-brand" style="color: #007BFF;" href="index.php">
+    Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -60,57 +62,57 @@
     </div>
   </nav>
 
-  <!-- headline -->
-  <section class="corona_update container-fluid">
+  <!-- heading -->
+  <section class="container-fluid">
     <div class="mb-3 ">
-      <h1 class="text-center text-uppercase h1 margin"> covid-19 indian states day-wise updates</h1>
+      <h1 class="text-center text-uppercase margin main-text"> covid-19 indian states day-wise updates</h1>
     </div>
 
     <!-- table -->
-    <div style="background-color: #121212" class="table-responsive card"> 
-      <table class=" table table-dark table-borderless text-left table-hover" style="background-color: #1F1B24" id="tbvalb">
+    <div class="table-responsive"> 
+      <table class=" table table-sm table-light text-left table-hover table-striped table-bordered" id="tbvalb">
         <tr> 
-          <th style="color: #3498DB" onclick="sortTable(0)">Date</th>
-          <th style="color: #F39C12" onclick="sortTable(2)">Status</th>
-          <th style="color: #16A085">AN</th>
-          <th style="color: #16A085">AP</th>
-          <th style="color: #16A085">AR</th>
-          <th style="color: #16A085">AS</th>
-          <th style="color: #16A085">BR</th>
-          <th style="color: #16A085">CH</th>
-          <th style="color: #16A085">CT</th>
-          <th style="color: #16A085">DD</th>
-          <th style="color: #16A085">DL</th>
-          <th style="color: #16A085">DN</th>
-          <th style="color: #16A085">GA</th>
-          <th style="color: #16A085">GJ</th>
-          <th style="color: #16A085">HP</th>
-          <th style="color: #16A085">HR</th>
-          <th style="color: #16A085">JH</th>
-          <th style="color: #16A085">JK</th>
-          <th style="color: #16A085">KA</th>
-          <th style="color: #16A085">KL</th>
-          <th style="color: #16A085">LA</th>
-          <th style="color: #16A085">LD</th>
-          <th style="color: #16A085">MH</th>
-          <th style="color: #16A085">ML</th>
-          <th style="color: #16A085">MN</th>
-          <th style="color: #16A085">MP</th>
-          <th style="color: #16A085">MZ</th>
-          <th style="color: #16A085">NL</th>
-          <th style="color: #16A085">OR</th>
-          <th style="color: #16A085">PB</th>
-          <th style="color: #16A085">PY</th>
-          <th style="color: #16A085">RJ</th>
-          <th style="color: #16A085">SK</th>
-          <th style="color: #16A085">TG</th>
-          <th style="color: #16A085">TN</th>
-          <th style="color: #16A085">TR</th>
-          <th style="color: #16A085">TT</th>
-          <th style="color: #16A085">UN</th>
-          <th style="color: #16A085">UP</th>
-          <th style="color: #16A085">UT</th>
-          <th style="color: #16A085">WB</th>
+          <th style="color: #FFFFFF; background-color: #3498DB;" onclick="sortTable(0)">Date</th>
+          <th style="color: #FFFFFF; background-color: #F39C12;" onclick="sortTable(2)">Status</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">AN</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">AP</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">AR</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">AS</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">BR</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">CH</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">CT</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">DD</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">DL</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">DN</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">GA</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">GJ</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">HP</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">HR</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">JH</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">JK</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">KA</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">KL</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">LA</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">LD</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">MH</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">ML</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">MN</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">MP</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">MZ</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">NL</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">OR</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">PB</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">PY</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">RJ</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">SK</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">TG</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">TN</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">TR</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">TT</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">UN</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">UP</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">UT</th>
+          <th style="color: #FFFFFF; background-color: #16A085;">WB</th>
         </tr>   
 
         <!-- php for fetching data from API (Indian States Day-Wise) -->
@@ -123,7 +125,7 @@
         ?>
 
         <tr>
-          <td><?php echo $statedaywise['states_daily'][$i]['date'] ?></td>
+          <td><?php echo $statedaywise['states_daily'][$i]['dateymd'] ?></td>
           <td><?php echo $statedaywise['states_daily'][$i]['status'] ?></td>
           <td><?php echo $statedaywise['states_daily'][$i]['an'] ?></td>
           <td><?php echo $statedaywise['states_daily'][$i]['ap'] ?></td>
@@ -181,8 +183,8 @@
   </div>
 
   <!-- footer -->
-  <footer class="mt-5 footer"> 
-    <div class="footer_style text-center container-fluid">
+  <footer> 
+    <div class="footer_style text-center container-fluid main-text">
       <p>© Covid-19 Tracker</p>
     </div>
   </footer>

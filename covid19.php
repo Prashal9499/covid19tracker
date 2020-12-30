@@ -4,22 +4,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="About Covid-19, useful information regarding coronavirus">
   <title>About Covid-19</title>
+  <!-- icon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />  
 </head>
-<body onload="fetch()">
+<body>
 
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3">
-    <a class="navbar-brand" href="index.php">
-      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">Covid-19 Tracker
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
+    <a class="navbar-brand" style="color: #007BFF;" href="index.php">
+    Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -58,25 +60,24 @@
     </div>
   </nav>
           
-  <section class="corona_update container-fluid">
+  <section class="container-fluid">
     
     <!-- heading -->
-    <div class="mb-3 margin">
-      <h1 class="text-center text-uppercase h1">about covid-19 </h1>
+    <div class="mb-3 ">
+      <h1 class="text-center text-uppercase margin main-text">about covid-19 </h1>
     </div>
                       
     <!-- image  -->
     <div class="container">
       <figure class ="text-center margin">
-        <img src="assets/images/coronavirus.png" class="img-fluid icon" width="200" height="200">
+        <img src="assets/images/coronavirus.png" class="img-fluid" width="200" height="200">
       </figure>
     </div>
 
     <!-- content text -->
-    <div class="container-fluid">
-                              
-      <h4 class="heading text-center">What is Coronavirus ?</h4>
-      <p class=" text-justify text-center para ">
+    <div class="container-fluid">                 
+      <h4 class="main-text text-center">What is Coronavirus ?</h4>
+      <p class="text-center text-margin">
       Coronavirus disease 2019 (COVID-19) is a contagious respiratory and vascular disease caused by severe acute respiratory syndrome 
       coronavirus 2 (SARS-CoV-2).First identified in Wuhan, China, it has caused an ongoing pandemic. COVID-19 mainly spreads through
       the air when people are near each other long enough, primarily via small droplets or aerosols,as an infected person breathes, 
@@ -84,8 +85,8 @@
       spread as early as two days before infected persons show symptoms (presymptomatic), and from asymptomatic (no symptoms) individuals.
       People remain infectious for up to ten days in moderate cases, and two weeks in severe cases. 
       </p>                    
-      <h4 class="heading text-center">Background</h4>                                        
-      <p class=" text-justify text-center para ">
+      <h4 class="main-text text-center">Background</h4>                                        
+      <p class="text-center text-margin">
       It is still unknown exactly where the outbreak first started, several early infected people had visited Huanan Seafood Wholesale 
       Market, located in Wuhan, Hubei, China. On 11 February 2020, the World Health Organization (WHO) named the disease "COVID-19", which
       is short for coronavirus disease 2019. The virus that caused the outbreak is known as severe acute respiratory syndrome coronavirus 2
@@ -99,8 +100,8 @@
       person infected. Phylogenic estimates in genetic studies conducted in early 2020 indicate that SARS-CoV-2 likely passed onto humans
       sometime between 6 October 2019 and 11 December 2019.
       </p>
-      <h4 class="heading text-center">Cases</h4> 
-      <p class=" text-justify text-center para ">
+      <h4 class="main-text text-center">Cases</h4> 
+      <p class="text-center text-margin">
       Official case counts refer to the number of people who have been tested for COVID-19 and whose test has been confirmed positive 
       according to official protocols. Many countries, early on, had official policies to not test those with only mild symptoms. 
       An analysis of the early phase of the outbreak up to 23 January estimated 86 percent of COVID-19 infections had not been detected,
@@ -111,8 +112,8 @@
   </section>
 
   <!-- footer -->
-  <footer class="mt-5 footer">
-    <div class="footer_style text-center container-fluid">
+  <footer>
+    <div class="footer_style text-center container-fluid main-text">
       <p>© Covid-19 Tracker</p>
     </div>
   </footer>

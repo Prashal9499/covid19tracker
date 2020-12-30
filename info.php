@@ -4,22 +4,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="some useful information about the website">
   <title>Information</title>
+  <!-- icon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
 </head>
-<body onload="fetch()">
+<body>
  
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3">
-    <a class="navbar-brand" href="index.php">
-      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">Covid-19 Tracker
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
+    <a class="navbar-brand" style="color: #007BFF;" href="index.php">
+    Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -62,29 +64,29 @@
   </nav>
 
   <!-- heading -->
-  <section class="corona_update container-fluid">
+  <section class="container-fluid">
     <div class="mb-3 ">
-      <h1 class="text-center text-uppercase h1 margin"> Information </h1>
+      <h1 class="text-center text-uppercase margin main-text"> Information </h1>
     </div>
 
     <!-- main content -->
-    <div class="container-fluid info">                               
-      <p class=" text-justify text-center ques" style="margin-bottom: 20px;">Are you official ?</p>
-      <p class=" text-justify text-center ans" style="margin-bottom: 20px;">No</p>                     
-      <p class=" text-justify text-center ques " style="margin-bottom: 20px;"> What are your sources? How is the data gathered for this project? </p>
-      <p class=" text-justify text-center ans" style="margin-bottom: 20px;">We are using different APIs.</p>                          
-      <p class=" text-justify text-center ques " style="margin-bottom: 20px;"> Why does Covid-19 Tracker have difference in numbers compared to MOHFW website? </p>
-      <p class=" text-justify text-center ans" style="margin-bottom: 20px;">MoHFW updates the data at a scheduled time. However, we update them based on different APIs. These are generally more recent.</p>                                
-      <p class=" text-justify text-center ques" style="margin-bottom: 20px;">Where can I find the data for this?</p>
-      <p class=" text-justify text-center ans" style="margin-bottom: 20px;">All the data is available through different APIs <a href="apilist.php">(list of APIs Used)</a></p>                                        
-      <p class=" text-justify text-center ques" style="margin-bottom: 20px;">Who are you?</p>
-      <p class=" text-justify text-center ans" style="margin-bottom: 20px;"> I am <a href="https://prashal9499.github.io/" target="_blank">Prashal Tarkas</a> (creator of this website) a student who likes to work on different projects.</p>
+    <div class="container-fluid">                               
+      <p class="text-center main-text" style="margin-bottom: 20px;">Are you official ?</p>
+      <p class="text-center" style="margin-bottom: 20px;">No.</p>                     
+      <p class="text-center main-text" style="margin-bottom: 20px;"> What are your sources? How is the data gathered for this project? </p>
+      <p class="text-center " style="margin-bottom: 20px;">We are using different APIs.</p>                          
+      <p class="text-center main-text" style="margin-bottom: 20px;"> Why does Covid-19 Tracker have difference in numbers compared to MOHFW website? </p>
+      <p class="text-center" style="margin-bottom: 20px;">MoHFW updates the data at a scheduled time. However, we update them based on different APIs. These are generally more recent.</p>                                
+      <p class="text-center main-text" style="margin-bottom: 20px;">Where can I find the data for this?</p>
+      <p class="text-center" style="margin-bottom: 20px;">All the data is available through different APIs. <a href="apilist.php">(list of APIs Used)</a></p>                                        
+      <p class="text-center main-text" style="margin-bottom: 20px;">Who are you?</p>
+      <p class="text-center" style="margin-bottom: 20px;"> I am <a href="https://prashal9499.github.io" target="_blank">Prashal Tarkas</a> (creator of this website) a student who likes to work on different projects.</p>
     </div>
   </section>
                       
   <!-- footer -->
-  <footer class="mt-5 footer">
-    <div class="footer_style text-center container-fluid">
+  <footer>
+    <div class="footer_style text-center container-fluid main-text">
       <p>© Covid-19 Tracker</p>
     </div>
   </footer>

@@ -4,22 +4,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="to report a case directly from the website">
   <title>Report a Case</title>
+  <!-- icon -->
+  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="assets/css/index.css">
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
   <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
 </head>
-<body onload="fetch()">
+<body>
 
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar navbar-dark p-3">
-    <a class="navbar-brand" href="index.php">
-      <img src="assets/images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Covid-19 Tracker">Covid-19 Tracker
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
+    <a class="navbar-brand" style="color: #007BFF;" href="index.php">
+    Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -59,34 +61,35 @@
   </nav>
 
   <!-- heading -->
-  <section class="corona_update container-fluid">
+  <section class="container-fluid">
     <div class="mb-3 ">
-      <h1 class="text-center text-uppercase h1 margin"> Report a Covid-19 Case </h1>
+      <h1 class="text-center text-uppercase margin main-text"> Report a Covid-19 Case </h1>
     </div>
 
     <div class="container">
       <div class ="row">
         <div class="col-lg-8 offset-lg-2 col-12">
+          
           <!-- information -->
-          <p class="heading text-center" style="font-size: 12px;">
+          <p class="text-center main-text" style="font-size: 12px;">
           Data will be sent to Ministry of Health and Family Welfare, Government of India and nearest Covid Testing Center.
           </p> 
 
           <!-- report form -->              
-          <form action="" method="POST" class="icon">
-            <div class="form-group heading">
+          <form action="" method="POST">
+            <div class="form-group main-text">
               <label>Full Name</label>
               <input type="text" class="form-control" name="fullname" placeholder="Full Name" autocomplete="off" required>
             </div>
-            <div class="form-group heading">
+            <div class="form-group main-text">
               <label for="exampleFormControlInput1">Email</label>
               <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
             </div>
-            <div class="form-group heading">
+            <div class="form-group main-text">
               <label>Contact No.</label>
               <input type="number" class="form-control" name="contactno" placeholder="+91XXXXXXXXXX" autocomplete="off" required >
             </div>
-            <div class="heading">
+            <div class="main-text">
               <label>Symptoms</label>
               <div>                  
                 <div class="custom-control custom-checkbox custom-control-inline">
@@ -107,15 +110,15 @@
                 </div>
               </div> 
             </div>                              
-            <div class="form-group heading" style="margin-top:10px;">
+            <div class="form-group main-text" style="margin-top:10px;">
               <label for="exampleFormControlTextarea1">Other Information</label>
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="info" placeholder="Additional Details" autocomplete="off" required></textarea>
             </div>
-            <button type="submit" class="btn btn-dark submit" name="submit">Submit</button>
+            <button type="submit" class="btn btn-primary submit" name="submit">Submit</button>
           </form>
           
           <!-- information -->
-          <p class="heading text-center" style="margin-top:20px; font-size: 12px;">
+          <p class="text-center main-text" style="margin-top:20px; font-size: 12px;">
           Once your data is sent a notification regarding your appointment for Covid-19 test will be sent 
           the provided Email and Phone No.
           </p>
@@ -125,8 +128,8 @@
   </section>
   
   <!-- footer -->
-  <footer class="mt-5 footer"> 
-    <div class="footer_style text-center container-fluid">
+  <footer> 
+    <div class="footer_style text-center container-fluid main-text">
       <p>© Covid-19 Tracker</p>
     </div>
   </footer>
