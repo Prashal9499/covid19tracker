@@ -5,7 +5,7 @@
   <meta name="description" content="Total population of the districts of india">
   <title>Indian District-Wise Population</title>
   <!-- icon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->

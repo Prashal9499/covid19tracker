@@ -10,7 +10,7 @@
   <meta name="description" content="Admin Only">
   <title>Admin Login</title>
   <!-- icon -->
-  <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
@@ -103,7 +103,7 @@
           <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST"> 
             <div class="form-group main-text">
               <label>Username</label>
-              <input type="text" class="form-control" name="username" value="" autocomplete="off" placeholder="XXXXXXXX" required>
+              <input type="text" class="form-control" name="username" value="" autocomplete="off" placeholder="Username" required>
             </div>
             <div class="form-group main-text">
               <label>Password</label>

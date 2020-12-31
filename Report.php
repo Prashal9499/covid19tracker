@@ -5,7 +5,7 @@
   <meta name="description" content="to report a case directly from the website">
   <title>Report a Case</title>
   <!-- icon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
@@ -83,7 +83,7 @@
             </div>
             <div class="form-group main-text">
               <label for="exampleFormControlInput1">Email</label>
-              <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+              <input type="email" class="form-control" name="email" placeholder="username@example.com" required>
             </div>
             <div class="form-group main-text">
               <label>Contact No.</label>
@@ -177,4 +177,3 @@
 
 </body>
 </html>
-

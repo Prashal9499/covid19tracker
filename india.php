@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="Covid-19 cases from India">
   <!-- icon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->

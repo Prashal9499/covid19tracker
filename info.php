@@ -5,7 +5,7 @@
   <meta name="description" content="some useful information about the website">
   <title>Information</title>
   <!-- icon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
@@ -73,13 +73,13 @@
     <div class="container-fluid">                               
       <p class="text-center main-text" style="margin-bottom: 20px;">Are you official ?</p>
       <p class="text-center" style="margin-bottom: 20px;">No.</p>                     
-      <p class="text-center main-text" style="margin-bottom: 20px;"> What are your sources? How is the data gathered for this project? </p>
+      <p class="text-center main-text" style="margin-bottom: 20px;"> What are your sources ? How is the data gathered for this project ? </p>
       <p class="text-center " style="margin-bottom: 20px;">We are using different APIs.</p>                          
-      <p class="text-center main-text" style="margin-bottom: 20px;"> Why does Covid-19 Tracker have difference in numbers compared to MOHFW website? </p>
+      <p class="text-center main-text" style="margin-bottom: 20px;"> Why does Covid-19 Tracker have difference in numbers compared to MOHFW website ? </p>
       <p class="text-center" style="margin-bottom: 20px;">MoHFW updates the data at a scheduled time. However, we update them based on different APIs. These are generally more recent.</p>                                
-      <p class="text-center main-text" style="margin-bottom: 20px;">Where can I find the data for this?</p>
+      <p class="text-center main-text" style="margin-bottom: 20px;">Where can I find the data for this ?</p>
       <p class="text-center" style="margin-bottom: 20px;">All the data is available through different APIs. <a href="apilist.php">(list of APIs Used)</a></p>                                        
-      <p class="text-center main-text" style="margin-bottom: 20px;">Who are you?</p>
+      <p class="text-center main-text" style="margin-bottom: 20px;">Who are you ?</p>
       <p class="text-center" style="margin-bottom: 20px;"> I am <a href="https://prashal9499.github.io" target="_blank">Prashal Tarkas</a> (creator of this website) a student who likes to work on different projects.</p>
     </div>
   </section>

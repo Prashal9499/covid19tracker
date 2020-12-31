@@ -10,7 +10,7 @@
   <meta name="description" content="Database access for deleting and updating query">
   <title>Covid-19 Cases Database</title>
   <!-- icon -->
-  <link rel="icon" href="../images/logo.png" type="image/gif" sizes="16x16">
+  <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
