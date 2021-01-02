@@ -25,7 +25,7 @@
     
   <!-- top nav -->        
   <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #007BFF;" href="../../index.php">
+    <a class="navbar-brand" style="color: #007BFF;" href="../../index.html">
     Covid-19 Tracker
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">

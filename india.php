@@ -20,7 +20,7 @@
  
   <!-- top nav -->
   <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #007BFF;" href="index.php">
+    <a class="navbar-brand" style="color: #007BFF;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
           <a class="nav-link" href="report.php">Report</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.php">World</a>
+          <a class="nav-link" href="index.html">World</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,13 +50,13 @@
           Covid-19
           </a>
           <div class="dropdown-menu dropstyle" aria-labelledby="navbarDropdown">
-            <a  class="dropdown-item dropstyle" href="covid19.php">About Covid-19</a>
-            <a  class="dropdown-item dropstyle" href="symptoms.php">Symptoms</a>
-            <a  class="dropdown-item dropstyle" href="prevention.php">Prevention</a>
+            <a  class="dropdown-item dropstyle" href="covid19.html">About Covid-19</a>
+            <a  class="dropdown-item dropstyle" href="symptoms.html">Symptoms</a>
+            <a  class="dropdown-item dropstyle" href="prevention.html">Prevention</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="info.php">Info</a>
+          <a class="nav-link" href="info.html">Info</a>
         </li>
       </ul>
     </div>
