@@ -4,8 +4,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="to report a case directly from the website">
   <title>Report a Case</title>
-  <!-- icon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <!-- web manifest -->
+  <link rel="manifest" href="assets/site.webmanifest">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
@@ -72,9 +76,45 @@
           
           <!-- information -->
           <p class="text-center main-text" style="font-size: 12px;">
-          Data will be sent to Ministry of Health and Family Welfare, Government of India and nearest Covid Testing Center.
+          Your information will be sent to nearest Covid-19 testing center.
           </p> 
+          
+          <!-- php for database connection with the form -->
+          <?php
+            include 'assets/php/connection.php';
+            if(isset($_POST['submit'])){
+              $fullname = $_POST['fullname'];
+              $email = $_POST['email'];
+              $contactno = $_POST['contactno'];
+              $symptom = $_POST['coronasym'];
+              $info = $_POST['info'];
+              $chk = "";
+              foreach($symptom as $chk1){
+              $chk .= $chk1."," ;
+            }
 
+            $insertquery = " insert into covidcase(fullname, email, contactno, symptom, info) values('$fullname', '$email', '$contactno', '$chk', '$info')";
+            $query = mysqli_query($con, $insertquery);
+            if($query){
+          ?>
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success !</strong> Information Sent.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> 
+          </div>
+
+          <?php
+          }else{
+            die("Database Connection Failed" . mysqli_connect_error()); 
+          ?>
+
+          <?php
+            }
+            }
+          ?>
+          
           <!-- report form -->              
           <form action="" method="POST">
             <div class="form-group main-text">
@@ -119,7 +159,7 @@
           
           <!-- information -->
           <p class="text-center main-text" style="margin-top:20px; font-size: 12px;">
-          Once your data is sent a notification regarding your appointment for Covid-19 test will be sent 
+          Once your data is sent a notification regarding your appointment for Covid-19 test will be sent to
           the provided Email and Phone No.
           </p>
         </div>
@@ -133,42 +173,6 @@
       <p>© Covid-19 Tracker</p>
     </div>
   </footer>
-
-  <!-- php for database connection with the form -->
-  <?php
-    include 'assets/php/reportform.php';
-    if(isset($_POST['submit'])){
-      $fullname = $_POST['fullname'];
-      $email = $_POST['email'];
-      $contactno = $_POST['contactno'];
-      $symptom = $_POST['coronasym'];
-      $info = $_POST['info'];
-      $chk = "";
-     foreach($symptom as $chk1){
-     $chk .= $chk1."," ;
-     }
-  
-     $insertquery = " insert into covidcase(fullname, email, contactno, symptom, info) values('$fullname', '$email', '$contactno', '$chk', '$info')";
-     $query = mysqli_query($con, $insertquery);
-    if($query){
-  ?>
-
-  <script>
-    alert("Reported Successfully");
-  </script>
-
-  <?php
-    }else{
-  ?>
-
-  <script>
-    alert("Error: Unsucessfull");
-  </script>
-    
-  <?php
-    }
-    }
-  ?>
 
   <!-- javascript -->       
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

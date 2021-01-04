@@ -9,8 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="Admin Only">
   <title>Admin Login</title>
-  <!-- icon -->
-  <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <!-- web manifest -->
+  <link rel="manifest" href="../site.webmanifest">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
@@ -33,38 +37,6 @@
       </ul>
     </div>
   </nav>
-
-  <!-- php connection --> 
-  <?php
-    include("login.php"); 
-    if($_SERVER["REQUEST_METHOD"] == "POST") {  
-    $username = mysqli_real_escape_string($db,$_POST['username']); 
-    $password = mysqli_real_escape_string($db,$_POST['password']);  
-     $sql = "SELECT id FROM login WHERE username = '$username' and password = '$password'"; 
-    $result = mysqli_query($db,$sql);
-     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $count = mysqli_num_rows($result);
-    if($count == 1) {
-    $_SESSION['login_user'] = $username;
-  ?>
-
-  <script> 
-    alert("Login Successful");
-  </script>
-  
-  <?php
-    header("location: database.php");
-    }else {
-  ?>
-
-  <script>
-    alert("Invalid Username or Password");
-  </script>
-
-  <?php
-    }
-  }
-  ?>
 
   <!-- heading --> 
   <header> 
@@ -97,6 +69,44 @@
 
           <?php
             }
+          ?>
+          
+          <!-- php login --> 
+          <?php
+            include("login.php"); 
+            if($_SERVER["REQUEST_METHOD"] == "POST") {  
+            $username = mysqli_real_escape_string($db,$_POST['username']); 
+            $password = mysqli_real_escape_string($db,$_POST['password']);  
+            $sql = "SELECT id FROM login WHERE username = '$username' and password = '$password'"; 
+            $result = mysqli_query($db,$sql);
+            $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+            $count = mysqli_num_rows($result);
+            if($count == 1) {
+            $_SESSION['login_user'] = $username;
+          ?>
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Login Successful !</strong> Welcome.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button> 
+          </div>
+  
+          <?php
+            header("location: database.php");
+            }else {
+          ?>
+
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <strong>Login Failed !</strong> Invalid Username or Password.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button> 
+          </div>
+
+          <?php
+            }
+          }
           ?>
 
           <!-- login form --> 

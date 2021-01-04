@@ -4,8 +4,12 @@
   <title>India Live Updates</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="Covid-19 cases from India">
-  <!-- icon -->
-  <link rel="icon" href="assets/images/logo.png" type="image/png" sizes="16x16">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+  <!-- web manifest -->
+  <link rel="manifest" href="assets/site.webmanifest">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->

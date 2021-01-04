@@ -9,8 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta name="description" content="Database access for deleting and updating query">
   <title>Covid-19 Cases Database</title>
-  <!-- icon -->
-  <link rel="icon" href="../images/logo.png" type="image/png" sizes="16x16">
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <!-- web manifest -->
+  <link rel="manifest" href="../site.webmanifest">
   <!-- bootstrap css -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- css -->
@@ -68,7 +72,6 @@
               $query = mysqli_query($con,$selectquery);
               $nums = mysqli_num_rows($query);
               while($res = mysqli_fetch_array($query)){
-              //echo $res['fullname'] . "<br>";  
             ?>
 
               <tr>
@@ -82,6 +85,20 @@
               </tr>
 
               <?php
+                }
+                if($con){
+              ?>
+                  
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>Success !</strong> Database connected.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                  
+              <?php
+                }else{
+                  die("Database Connection Failed" . mysqli_connect_error());   
                 }
               ?>
 
@@ -104,5 +121,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="assets/javascript/delete.js"></script>
+
 </body>
 </html>
