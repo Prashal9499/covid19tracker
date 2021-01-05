@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-  <title>India Live Updates</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Covid-19 cases from India">
+  <title>India Live Updates</title>
   <!-- favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
@@ -23,8 +25,8 @@
 <body> 
  
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #007BFF;" href="index.html">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3"> 
+    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,14 +76,14 @@
 
     <!-- table -->
     <div class="table-responsive">
-      <table class="table table-sm table-light text-left table-hover table-striped table-bordered" id="tbvalb">
+      <table class="table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbvalb">
         <tr>
-          <th style="color: #FFFFFF; background-color: #F39C12;" onclick="sortTable(0)">last Updated Time</th>
-          <th style="color: #FFFFFF; background-color: #3498DB; " onclick="sortTable(1)">State</th>
-          <th style="color: #FFFFFF; background-color: #E74C3C;" onclick="sortTable(2)">Confirmed</th>
-          <th style="color: #FFFFFF; background-color: #C0392B;" onclick="sortTable(3)">Active</th>
-          <th style="color: #FFFFFF; background-color: #2ECC71;" onclick="sortTable(4)">Recovered</th>
-          <th style="color: #FFFFFF; background-color: #95A5A6;" onclick="sortTable(5)">Deaths</th>
+          <th style="color: #343A40; background-color: #F39C12;" onclick="sortTable(0)">last Updated Time</th>
+          <th style="color: #343A40; background-color: #3498DB; " onclick="sortTable(1)">State</th>
+          <th style="color: #343A40; background-color: #E74C3C;" onclick="sortTable(2)">Confirmed</th>
+          <th style="color: #343A40; background-color: #C0392B;" onclick="sortTable(3)">Active</th>
+          <th style="color: #343A40; background-color: #2ECC71;" onclick="sortTable(4)">Recovered</th>
+          <th style="color: #343A40; background-color: #95A5A6;" onclick="sortTable(5)">Deaths</th>
         </tr>   
 
         <!-- php for fetching data from API (India) -->

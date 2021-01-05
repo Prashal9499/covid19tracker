@@ -1,7 +1,9 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Covid-19 cases from indian states on per day basis">
   <title>Indian States Day-Wise Updates</title>
   <!-- favicon -->
@@ -23,8 +25,8 @@
 <body> 
 
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #007BFF;" href="index.html">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3"> 
+    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,49 +76,49 @@
 
     <!-- table -->
     <div class="table-responsive"> 
-      <table class=" table table-sm table-light text-left table-hover table-striped table-bordered" id="tbvalb">
+      <table class=" table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbvalb">
         <tr> 
-          <th style="color: #FFFFFF; background-color: #3498DB;" onclick="sortTable(0)">Date</th>
-          <th style="color: #FFFFFF; background-color: #F39C12;" onclick="sortTable(2)">Status</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">AN</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">AP</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">AR</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">AS</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">BR</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">CH</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">CT</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">DD</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">DL</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">DN</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">GA</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">GJ</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">HP</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">HR</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">JH</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">JK</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">KA</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">KL</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">LA</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">LD</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">MH</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">ML</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">MN</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">MP</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">MZ</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">NL</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">OR</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">PB</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">PY</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">RJ</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">SK</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">TG</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">TN</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">TR</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">TT</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">UN</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">UP</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">UT</th>
-          <th style="color: #FFFFFF; background-color: #16A085;">WB</th>
+          <th style="color: #343A40; background-color: #3498DB;" onclick="sortTable(0)">Date</th>
+          <th style="color: #343A40; background-color: #F39C12;" onclick="sortTable(2)">Status</th>
+          <th style="color: #343A40; background-color: #16A085;">AN</th>
+          <th style="color: #343A40; background-color: #16A085;">AP</th>
+          <th style="color: #343A40; background-color: #16A085;">AR</th>
+          <th style="color: #343A40; background-color: #16A085;">AS</th>
+          <th style="color: #343A40; background-color: #16A085;">BR</th>
+          <th style="color: #343A40; background-color: #16A085;">CH</th>
+          <th style="color: #343A40; background-color: #16A085;">CT</th>
+          <th style="color: #343A40; background-color: #16A085;">DD</th>
+          <th style="color: #343A40; background-color: #16A085;">DL</th>
+          <th style="color: #343A40; background-color: #16A085;">DN</th>
+          <th style="color: #343A40; background-color: #16A085;">GA</th>
+          <th style="color: #343A40; background-color: #16A085;">GJ</th>
+          <th style="color: #343A40; background-color: #16A085;">HP</th>
+          <th style="color: #343A40; background-color: #16A085;">HR</th>
+          <th style="color: #343A40; background-color: #16A085;">JH</th>
+          <th style="color: #343A40; background-color: #16A085;">JK</th>
+          <th style="color: #343A40; background-color: #16A085;">KA</th>
+          <th style="color: #343A40; background-color: #16A085;">KL</th>
+          <th style="color: #343A40; background-color: #16A085;">LA</th>
+          <th style="color: #343A40; background-color: #16A085;">LD</th>
+          <th style="color: #343A40; background-color: #16A085;">MH</th>
+          <th style="color: #343A40; background-color: #16A085;">ML</th>
+          <th style="color: #343A40; background-color: #16A085;">MN</th>
+          <th style="color: #343A40; background-color: #16A085;">MP</th>
+          <th style="color: #343A40; background-color: #16A085;">MZ</th>
+          <th style="color: #343A40; background-color: #16A085;">NL</th>
+          <th style="color: #343A40; background-color: #16A085;">OR</th>
+          <th style="color: #343A40; background-color: #16A085;">PB</th>
+          <th style="color: #343A40; background-color: #16A085;">PY</th>
+          <th style="color: #343A40; background-color: #16A085;">RJ</th>
+          <th style="color: #343A40; background-color: #16A085;">SK</th>
+          <th style="color: #343A40; background-color: #16A085;">TG</th>
+          <th style="color: #343A40; background-color: #16A085;">TN</th>
+          <th style="color: #343A40; background-color: #16A085;">TR</th>
+          <th style="color: #343A40; background-color: #16A085;">TT</th>
+          <th style="color: #343A40; background-color: #16A085;">UN</th>
+          <th style="color: #343A40; background-color: #16A085;">UP</th>
+          <th style="color: #343A40; background-color: #16A085;">UT</th>
+          <th style="color: #343A40; background-color: #16A085;">WB</th>
         </tr>   
 
         <!-- php for fetching data from API (Indian States Day-Wise) -->

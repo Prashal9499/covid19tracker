@@ -6,7 +6,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Database access for deleting and updating query">
   <title>Covid-19 Cases Database</title>
   <!-- favicon -->
@@ -27,8 +29,8 @@
 </head>
 <body> 
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
-    <a class="navbar-brand" style="color: #007BFF;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
+    <a class="navbar-brand" style="color: #FA8072;">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,15 +55,15 @@
     <div class="main-div">
       <div class="center-div">
         <div class="table-responsive">
-          <table class="table table-sm table-light text-left table-hover table-striped table-bordered" id="tbvalb">
+          <table class="table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbvalb">
             <tr> 
-              <th style="color: #FFFFFF; background-color: #C0392B;">ID</th> 
-              <th style="color: #FFFFFF; background-color: #2ECC71;">Full Name</th>
-              <th style="color: #FFFFFF; background-color: #3498DB;">Email Id</th>
-              <th style="color: #FFFFFF; background-color: #9B59B6;">Contact No.</th>
-              <th style="color: #FFFFFF; background-color: #E74C3C;">Symptoms</th>
-              <th style="color: #FFFFFF; background-color: #E67E22;">Information</th>
-              <th style="color: #FFFFFF; background-color: #E67E22;"></th>
+              <th style="color: #343A40; background-color: #C0392B;">ID</th> 
+              <th style="color: #343A40; background-color: #2ECC71;">Full Name</th>
+              <th style="color: #343A40; background-color: #3498DB;">Email Id</th>
+              <th style="color: #343A40; background-color: #9B59B6;">Contact No.</th>
+              <th style="color: #343A40; background-color: #E74C3C;">Symptoms</th>
+              <th style="color: #343A40; background-color: #E67E22;">Information</th>
+              <th style="color: #343A40; background-color: #E67E22;"></th>
             </tr> 
             <tbody> 
 
@@ -81,7 +83,7 @@
                 <td><?php echo $res['contactno']; ?></td>
                 <td><?php echo $res['symptom']; ?></td>
                 <td><?php echo $res['info']; ?></td>
-                <td> <a href="delete.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Delete"> <i class="fa fa-trash" aria-hidden="true"></i> </a> </td>
+                <td><a href="delete.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash main-text" aria-hidden="true"></i></a></td>
               </tr>
 
               <?php

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Total population of the districts of india">
   <title>Indian District-Wise Population</title>
   <!-- favicon -->
@@ -23,8 +25,8 @@
 <body>
 
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3">
-    <a class="navbar-brand" style="color: #007BFF;" href="index.html">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
+    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,11 +76,11 @@
 
     <!-- table -->
     <div class="table-responsive">
-      <table class=" table table-sm table-light text-left table-hover table-striped table-bordered" id="tbvalb">
+      <table class=" table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbvalb">
         <tr>
-          <th style="color: #FFFFFF; background-color:#3498DB;" onclick="sortTable(0)">State</th>
-          <th style="color: #FFFFFF; background-color:#FA8072;" onclick="sortTable(2)">District</th>
-          <th style="color: #FFFFFF; background-color:#16A085;" onclick="sortTable(2)">Population</th>
+          <th style="color: #343A40; background-color:#3498DB;" onclick="sortTable(0)">State</th>
+          <th style="color: #343A40; background-color:#FA8072;" onclick="sortTable(2)">District</th>
+          <th style="color: #343A40; background-color:#16A085;" onclick="sortTable(2)">Population</th>
         </tr>   
 
         <!-- php for fetching API (India Population) -->

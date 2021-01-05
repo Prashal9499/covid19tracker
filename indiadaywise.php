@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Covid-19 cases from inida on per day basis">
   <title>India Day-Wise Updates</title>
   <!-- favicon -->
@@ -23,8 +25,8 @@
 <body> 
 
   <!-- top nav -->
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #007BFF;" href="index.html">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3"> 
+    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +76,7 @@
 
     <!-- table -->
     <div class="table-responsive">
-      <table class=" table table-sm table-light text-left table-hover table-striped table-bordered" id="tbl">
+      <table class=" table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbl">
 
       <!-- php code for fetching API (India Day-Wise) -->
       <?php
@@ -85,21 +87,17 @@
         while ($i <  $totalcount){ 
       ?>
 
-      <tr> 
-        <th class="text-left" colspan="6" style="color: #FFFFFF; background-color: #3498DB">Date and Month</th>
-      </tr>
-      <tr>
-        <td colspan="6" class="text-left" ><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
-      </tr>
       <tr class="text-capitalize">
-        <th style="color: #FFFFFF; background-color: #E74C3C;">daily confirmed</th>
-        <th style="color: #FFFFFF; background-color: #95A5A6;">daily deceased</th>
-        <th style="color: #FFFFFF; background-color: #2ECC71;">daily recovered</th>
-        <th style="color: #FFFFFF; background-color: #E74C3C;">total confirmed</th>
-        <th style="color: #FFFFFF; background-color: #95A5A6;">total deceased</th>
-        <th style="color: #FFFFFF; background-color: #2ECC71;">total recovered</th>
+        <th style="color: #343A40; background-color: #3498DB">Date and Month</th>
+        <th style="color: #343A40; background-color: #E74C3C;">daily confirmed</th>
+        <th style="color: #343A40; background-color: #95A5A6;">daily deceased</th>
+        <th style="color: #343A40; background-color: #2ECC71;">daily recovered</th>
+        <th style="color: #343A40; background-color: #E74C3C;">total confirmed</th>
+        <th style="color: #343A40; background-color: #95A5A6;">total deceased</th>
+        <th style="color: #343A40; background-color: #2ECC71;">total recovered</th>
       </tr>
       <tr class="mb-5">
+        <td><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
         <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> 
         <td><?php echo $daywise['cases_time_series'][$i] ['dailydeceased'] . "<br>" ; ?></td>
         <td><?php echo $daywise['cases_time_series'][$i] ['dailyrecovered'] . "<br>" ; ?></td>

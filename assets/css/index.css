@@ -2,19 +2,38 @@ body, html{
   margin: 0;   
   padding: 0;
   box-sizing: border-box;
+  background-color: #343A40;
   font-family: 'Nunito', sans-serif;
 }
 
 /* top nav */
 .navbar{
-  background-color: #FFFFFF;
   box-shadow: 0 5px 5px -2px rgba(0,0,0,.2);
+}
+
+.dropdown-menu{
+  background-color: #343A40;
+  border: 1px solid #FA8072;
+}
+
+.dropdown-item{
+  background-color: #343A40;
+  color: #FFFFFF;
+}
+
+.dropdown-item:hover{
+  background-color: #696D725B;
+  color: #FFFFFF;
 }
 
 /* content, text, margin */
 .main-text{ 
-  color: #007BFF; 
+  color: #FA8072;
 } 
+
+.content-text{
+  color: #FFFFFF;
+}
 
 .text-margin{
   margin: 15px;
@@ -32,7 +51,7 @@ body, html{
   bottom: 30px;
   right: 40px;
   z-index: 99;
-  background-color: #007BFF;
+  background-color: #FA8072;
   color: #FFFFFF;
   cursor: pointer;
   padding: 10px;
@@ -45,4 +64,5 @@ body, html{
   width: 30%;
   margin-left: 35%;
   margin-right: 35%;
+  border: 1px solid #FA8072;
 }

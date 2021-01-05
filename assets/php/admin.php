@@ -6,7 +6,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+  <!-- required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Admin Only">
   <title>Admin Login</title>
   <!-- favicon -->
@@ -28,8 +30,8 @@
 <body> 
     
   <!-- top nav -->        
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #007BFF;" href="../../index.html">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3"> 
+    <a class="navbar-brand" style="color: #FA8072;" href="../../index.html">
     Covid-19 Tracker
     </a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -119,7 +121,7 @@
               <label>Password</label>
               <input type="password" class="form-control" name="password" value="" autocomplete="off" placeholder="Password" required>
             </div>
-            <button type="submit" class="btn btn-primary submit" style="margin-bottom:20px;" name="submit">Submit</button>
+            <button type="submit" class="btn btn-dark submit" style="margin-bottom:20px;" name="submit">Submit</button>
           </form>
         </div>
       </div> 
@@ -129,7 +131,7 @@
   <!-- footer --> 
   <footer> 
     <div class="footer_style text-center container-fluid main-text">
-      <p>© Covid-19 Tracker</p>
+      <p style="margin-top: 185px;">© Covid-19 Tracker</p>
     </div>               
   </footer>
           
