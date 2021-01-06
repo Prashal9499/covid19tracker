@@ -78,15 +78,6 @@
     <div class="table-responsive">
       <table class=" table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbl">
 
-      <!-- php code for fetching API (India Day-Wise) -->
-      <?php
-        $data = file_get_contents('https://api.covid19india.org/data.json');
-        $daywise = json_decode($data, true);
-        $totalcount = count($daywise['cases_time_series']);
-        $i=0;
-        while ($i <  $totalcount){ 
-      ?>
-
       <tr class="text-capitalize">
         <th style="color: #343A40; background-color: #3498DB">Date and Month</th>
         <th style="color: #343A40; background-color: #E74C3C;">daily confirmed</th>
@@ -96,6 +87,16 @@
         <th style="color: #343A40; background-color: #95A5A6;">total deceased</th>
         <th style="color: #343A40; background-color: #2ECC71;">total recovered</th>
       </tr>
+
+      <!-- php code for fetching API (India Day-Wise) -->
+      <?php
+        $data = file_get_contents('https://api.covid19india.org/data.json');
+        $daywise = json_decode($data, true);
+        $totalcount = count($daywise['cases_time_series']);
+        $i=0;
+        while ($i <  $totalcount){ 
+      ?>
+
       <tr class="mb-5">
         <td><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
         <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> 

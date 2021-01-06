@@ -132,5 +132,5 @@
   <script src="assets/javascript/topscroller.js"></script>
   <script src="assets/javascript/tablesort.js"></script>
 
-  </body>
+</body>
 </html>
