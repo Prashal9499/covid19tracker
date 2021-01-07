@@ -13,7 +13,7 @@ body, html{
 
 .dropdown-menu{
   background-color: #343A40;
-  border: 1px solid #FA8072;
+  border: 1px solid #00FFDE;
 }
 
 .dropdown-item{
@@ -28,7 +28,7 @@ body, html{
 
 /* content, text, margin */
 .main-text{ 
-  color: #FA8072;
+  color: #00FFDE;
 } 
 
 .content-text{
@@ -51,7 +51,7 @@ body, html{
   bottom: 30px;
   right: 40px;
   z-index: 99;
-  background-color: #FA8072;
+  background-color: #00FFDE;
   color: #FFFFFF;
   cursor: pointer;
   padding: 10px;
@@ -64,5 +64,5 @@ body, html{
   width: 30%;
   margin-left: 35%;
   margin-right: 35%;
-  border: 1px solid #FA8072;
+  border: 1px solid #00FFDE;
 }

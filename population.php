@@ -26,7 +26,7 @@
 
   <!-- top nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
-    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
+    <a class="navbar-brand" style="color: #00FFDE;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,7 +76,7 @@
 
     <!-- table -->
     <div class="table-responsive">
-      <table class=" table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbvalb">
+      <table class=" table table-sm table-dark text-center table-hover table-striped table-bordered" id="tbvalb">
         <tr>
           <th style="color: #343A40; background-color:#3498DB;" onclick="sortTable(0)">State</th>
           <th style="color: #343A40; background-color:#FA8072;" onclick="sortTable(2)">District</th>

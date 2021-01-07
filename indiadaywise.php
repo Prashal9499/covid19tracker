@@ -26,7 +26,7 @@
 
   <!-- top nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3"> 
-    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
+    <a class="navbar-brand" style="color: #00FFDE;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,41 +76,40 @@
 
     <!-- table -->
     <div class="table-responsive">
-      <table class=" table table-sm table-dark text-left table-hover table-striped table-bordered" id="tbl">
+      <table class=" table table-sm table-dark text-center table-hover table-striped table-bordered" id="tbl">
+        <tr class="text-capitalize">
+          <th style="color: #343A40; background-color: #3498DB">Date and Month</th>
+          <th style="color: #343A40; background-color: #E74C3C;">daily confirmed</th>
+          <th style="color: #343A40; background-color: #95A5A6;">daily deceased</th>
+          <th style="color: #343A40; background-color: #2ECC71;">daily recovered</th>
+          <th style="color: #343A40; background-color: #E74C3C;">total confirmed</th>
+          <th style="color: #343A40; background-color: #95A5A6;">total deceased</th>
+          <th style="color: #343A40; background-color: #2ECC71;">total recovered</th>
+        </tr>
 
-      <tr class="text-capitalize">
-        <th style="color: #343A40; background-color: #3498DB">Date and Month</th>
-        <th style="color: #343A40; background-color: #E74C3C;">daily confirmed</th>
-        <th style="color: #343A40; background-color: #95A5A6;">daily deceased</th>
-        <th style="color: #343A40; background-color: #2ECC71;">daily recovered</th>
-        <th style="color: #343A40; background-color: #E74C3C;">total confirmed</th>
-        <th style="color: #343A40; background-color: #95A5A6;">total deceased</th>
-        <th style="color: #343A40; background-color: #2ECC71;">total recovered</th>
-      </tr>
+        <!-- php code for fetching API (India Day-Wise) -->
+        <?php
+          $data = file_get_contents('https://api.covid19india.org/data.json');
+          $daywise = json_decode($data, true);
+          $totalcount = count($daywise['cases_time_series']);
+          $i=0;
+          while ($i <  $totalcount){ 
+        ?>
 
-      <!-- php code for fetching API (India Day-Wise) -->
-      <?php
-        $data = file_get_contents('https://api.covid19india.org/data.json');
-        $daywise = json_decode($data, true);
-        $totalcount = count($daywise['cases_time_series']);
-        $i=0;
-        while ($i <  $totalcount){ 
-      ?>
+        <tr class="mb-5">
+          <td><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
+          <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> 
+          <td><?php echo $daywise['cases_time_series'][$i] ['dailydeceased'] . "<br>" ; ?></td>
+          <td><?php echo $daywise['cases_time_series'][$i] ['dailyrecovered'] . "<br>" ; ?></td>
+          <td><?php echo $daywise['cases_time_series'][$i] ['totalconfirmed'] . "<br>" ; ?></td>
+          <td><?php echo $daywise['cases_time_series'][$i] ['totaldeceased'] . "<br>" ; ?></td>
+          <td><?php echo $daywise['cases_time_series'][$i] ['totalrecovered'] . "<br>" ; ?></td>
+        </tr>
 
-      <tr class="mb-5">
-        <td><?php echo $daywise['cases_time_series'][$i] ['date'] . "<br>" ; ?> </td>
-        <td><?php echo $daywise['cases_time_series'][$i] ['dailyconfirmed'] . "<br>" ; ?></td> 
-        <td><?php echo $daywise['cases_time_series'][$i] ['dailydeceased'] . "<br>" ; ?></td>
-        <td><?php echo $daywise['cases_time_series'][$i] ['dailyrecovered'] . "<br>" ; ?></td>
-        <td><?php echo $daywise['cases_time_series'][$i] ['totalconfirmed'] . "<br>" ; ?></td>
-        <td><?php echo $daywise['cases_time_series'][$i] ['totaldeceased'] . "<br>" ; ?></td>
-        <td><?php echo $daywise['cases_time_series'][$i] ['totalrecovered'] . "<br>" ; ?></td>
-      </tr>
-
-      <?php
-        $i++;
-        }
-      ?>
+        <?php
+          $i++;
+          }
+        ?>
 
       </table>
     </div>

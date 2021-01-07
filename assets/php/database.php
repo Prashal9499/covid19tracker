@@ -28,9 +28,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css" integrity="sha512-kJ30H6g4NGhWopgdseRb8wTsyllFUYIx3hiUwmGAkgA9B/JbzUBDQVr2VVlWGde6sdBVOG7oU8AL35ORDuMm8g==" crossorigin="anonymous" />
 </head>
 <body> 
+
   <!-- top nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
-    <a class="navbar-brand" style="color: #FA8072;">
+    <a class="navbar-brand" style="color: #00FFDE;">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,33 +77,33 @@
               while($res = mysqli_fetch_array($query)){
             ?>
 
-              <tr>
-                <td><?php echo $res['id']; ?></td>
-                <td><?php echo $res['fullname']; ?></td>
-                <td><?php echo $res['email']; ?></td>
-                <td><?php echo $res['contactno']; ?></td>
-                <td><?php echo $res['symptom']; ?></td>
-                <td><?php echo $res['info']; ?></td>
-                <td><a href="delete.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash main-text" aria-hidden="true"></i></a></td>
-              </tr>
+            <tr>
+              <td><?php echo $res['id']; ?></td>
+              <td><?php echo $res['fullname']; ?></td>
+              <td><?php echo $res['email']; ?></td>
+              <td><?php echo $res['contactno']; ?></td>
+              <td><?php echo $res['symptom']; ?></td>
+              <td><?php echo $res['info']; ?></td>
+              <td><a href="delete.php?id=<?php echo $res['id']; ?>" data-toggle="tooltip" data-placement="bottom" title="Delete"><i class="fa fa-trash main-text" aria-hidden="true"></i></a></td>
+            </tr>
 
-              <?php
-                }
-                if($con){
-              ?>
+            <?php
+              }
+              if($con){
+            ?>
                   
-              <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Success !</strong> Database connected.
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+              <strong>Success !</strong> Database connected.
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
                   
-              <?php
-                }else{
-                  die("Database Connection Failed" . mysqli_connect_error());   
-                }
-              ?>
+            <?php
+              }else{
+                die("Database Connection Failed" . mysqli_connect_error());   
+              }
+            ?>
 
             </tbody>
           </table>

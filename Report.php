@@ -26,7 +26,7 @@
 
   <!-- top nav -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top p-3">
-    <a class="navbar-brand" style="color: #FA8072;" href="index.html">
+    <a class="navbar-brand" style="color: #00FFDE;" href="index.html">
     Covid-19 Tracker
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,12 +75,7 @@
     <div class="container">
       <div class ="row">
         <div class="col-lg-8 offset-lg-2 col-12">
-          
-          <!-- information -->
-          <p class="text-center content-text" style="font-size: 12px;">
-          Your information will be sent to nearest Covid-19 testing center.
-          </p> 
-          
+  
           <!-- php for database connection with the form -->
           <?php
             include 'assets/php/connection.php';
@@ -154,15 +149,14 @@
             </div>                              
             <div class="form-group main-text" style="margin-top:10px;">
               <label for="exampleFormControlTextarea1">Other Information</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="info" placeholder="Additional Details" autocomplete="off" required></textarea>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="info" placeholder="Other symptoms and additional details" autocomplete="off" required></textarea>
             </div>
             <button type="submit" class="btn btn-dark submit" name="submit">Submit</button>
           </form>
           
           <!-- information -->
           <p class="text-center content-text" style="margin-top:20px; font-size: 12px;">
-          Once your data is sent a notification regarding your appointment for Covid-19 test will be sent to
-          the provided Email and Phone No.
+          Your information will be sent to nearest Covid-19 testing center.
           </p>
         </div>
       </div>
