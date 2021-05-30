@@ -89,6 +89,7 @@ footer {
   border: 1px solid #905ef0;
 }
 
+/* table */
 .table {
   background: rgba(255, 255, 255);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
@@ -107,6 +108,7 @@ footer {
   border-radius: 0 20px 0 0;
 }
 
+/* responsive css */
 @media screen and (max-width: 1024px) {
   h1 {
     margin: 0;
