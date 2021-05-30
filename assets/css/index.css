@@ -5,6 +5,7 @@ html {
   box-sizing: border-box;
   background: url("https://frontendjoe.com/images/wallpapers/memphis.png");
   height: 100vh;
+  color-scheme: dark;
   font-family: "Nunito", sans-serif;
 }
 
@@ -120,4 +121,21 @@ footer {
   .table {
     border-radius: 0;
   }
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #905ef0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #915ef088;
 }
